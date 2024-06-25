@@ -1,0 +1,3 @@
+[submodule "mqtt-rpc-common"]
+	path = mqtt-rpc-common
+	url = git@github.com:rsmaxwell/mqtt-rpc-common.git
