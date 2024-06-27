@@ -6,3 +6,5 @@ plugins {
 
 rootProject.name = 'mqtt-rpc'
 include('mqtt-rpc-common')
+include('mqtt-rpc-request')
+include('mqtt-rpc-response')
