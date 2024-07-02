@@ -1,6 +1,6 @@
 # mqtt-rpc
 
-This project is the parent of a set of git modules which implement Remote procedure call (or request/response) form of messages over mqtt v5.
+This project is the parent of a set of git modules which implement Remote Procedure Call (or request/response) form of messaging over mqtt v5.
 
 To download the complete set:
 
