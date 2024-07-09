@@ -1,40 +1,31 @@
 # mqtt-rpc
 
-This project is the parent of a set of git modules which implement Remote Procedure Call (or request/response) form of messaging over mqtt v5.
 
-To download the complete set:
+Some webapps need both a request/resonse and a publish/subscribe messaging model to both make requests to a server which require a particular response (e.g. logon) and
+also to subscribe to events as they happen (e.g. display share price). http works well for request/response but has to resort to polling to keep up-to-date in a dynamic environment. 
+MQTT is built around the publish/subscribe model and now in v5 supports request/response as well. This package uses these mqtt v5 features to provide an implementation of request/response messaging. 
 
-	git clone --recurse-submodules git@github.com:rsmaxwell/mqtt-rpc.git
+*MQTT* requires a broker process to be running to which clients connect. In the case of mqtt-rpc there is one client (*Responder*) which listens to a well known topic, and sends replies to a reply_topic,
+the name of which was contained in the original request. There may be many *Requester* clients which send requests, and wait for a reply.  *Requester* clients can only make requests which are supported by the *Responder*.
+
+One example of an *MQTT* broker is **Mosquitto**  ( https://mosquitto.org/ ). Connections to the *MQTT* broker, which will be exposed to the internet, need to be appropriately secured
+
+
+
+
+
+## Download
+
+To clone this project and the subprojects:
+
+```
+git clone --recurse-submodules git@github.com:rsmaxwell/mqtt-rpc.git
+```
+
+
+
 	
-which will result in the following:
 
-    mqtt-rpc
-    ├── ...
-    ├── mqtt-rpc-common
-    ├── mqtt-rpc-request
-    ├── mqtt-rpc-response
-    └── ...
-
-
-mqtt expects a broker to be running to which a responder client and a number of requester clients can connect. 
-One such broker is mosquitto ( https://mosquitto.org/ )
-
-A requester publishes its requests on the "request" topic and expects a response on the "{clientID}/response" topic.
-The responder listens for incoming requests on the "request" topic and sends responses to the appropriate "{clientID}/response" topic
-
-The requester will receive responses asynchronously, so a mechanism is provided for the requesting thread to wait for the response to arrive 
-before picking up the response and returning to the caller.
-
-The requester will need customised implementations for:
-
-- encoding their requests into a request object
-- unpacking the response
-     
-The responder will need a customised implementation for:  
-
-- unpacking the request
-- processing the request
-- generating a response
     
 
 ### Building
