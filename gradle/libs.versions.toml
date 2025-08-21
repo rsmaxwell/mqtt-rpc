@@ -12,6 +12,7 @@ junit-jupiter = "5.13.0"
 ##         ⬆ = "5.13.4"
 ##         ⬆ = "6.0.0-M1"
 ##         ⬆ = "6.0.0-M2"
+##         ⬆ = "6.0.0-RC1"
 
 [libraries]
 
@@ -41,3 +42,4 @@ jackson-databind = "com.fasterxml.jackson.core:jackson-databind:2.19.0"
 ##                                                          ⬆ :2.20.0-rc1"
 
 io = "io.jsonwebtoken:jjwt:0.12.6"
+##                     ⬆ :0.12.7"
