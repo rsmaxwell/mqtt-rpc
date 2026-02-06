@@ -49,6 +49,9 @@ REPOSITORY="${REPOSITORY}"
 EOL
 
 
+tree ${PROJECT_DIR}
+
+
 ${PROJECT_DIR}/mqtt-rpc-common/scripts/prepare.sh
 ${PROJECT_DIR}/mqtt-rpc-request/scripts/prepare.sh
 ${PROJECT_DIR}/mqtt-rpc-response/scripts/prepare.sh
