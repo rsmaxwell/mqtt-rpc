@@ -12,16 +12,20 @@ cd ${PROJECT_DIR}
 
 
 
-echo "whoami"
-whoami
 
-echo "listing of /home/gradle"
+set -x
 ls -al /home/gradle
-
 echo "PROJECT_DIR: ${PROJECT_DIR}"
-
-echo "tree of the PROJECT_DIR"
 tree -pug ${PROJECT_DIR}
+whoami
+id jenkins
+id ubuntu
+id gradle
+
+find /home -maxdepth 2 -name gradle.properties -type f
+
+set +x
+
 
 
 
