@@ -34,7 +34,10 @@ ls -al /home/ubuntu/.gradle
 ls -al /home/gradle
 ls -al /home/gradle/.gradle
 
-tree -pug -L 2 /home 
+ls -al /home/gradle/.gradle/gradle.properties
+cat /home/gradle/.gradle/gradle.properties
+
+tree -pug -L 3 /home 
 
 set +x
 
