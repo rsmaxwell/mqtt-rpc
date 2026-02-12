@@ -11,16 +11,12 @@ BUILD_DIR=${PROJECT_DIR}/build
 cd ${PROJECT_DIR}
 
 
-# Force Gradle to use the PVC-backed directory for ~/.gradle
-export GRADLE_USER_HOME=/home/gradle
-# (optional but often helps tools that rely on HOME)
-export HOME=/home/gradle
-
 echo "whoami"
 whoami
 
 echo "listing of /home/gradle"
 ls -al /home/gradle
+
 
 ${PROJECT_DIR}/gradlew publish \
     -PrepositoryName=${REPOSITORY} \
