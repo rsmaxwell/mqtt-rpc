@@ -11,11 +11,16 @@ BUILD_DIR=${PROJECT_DIR}/build
 cd ${PROJECT_DIR}
 
 
+
 echo "whoami"
 whoami
 
 echo "listing of /home/gradle"
 ls -al /home/gradle
+
+echo "tree of the PROJECT_DIR"
+tree ${PROJECT_DIR}
+
 
 
 ${PROJECT_DIR}/gradlew publish \
