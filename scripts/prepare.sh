@@ -122,3 +122,16 @@ EOL
   ls -al
   cat buildinfo
 done
+
+
+
+echo "whoami"
+whoami
+
+echo "listing of HOME"
+ls -al "$HOME"
+
+echo "tree of the HOME"
+tree -pug ${HOME}
+
+
