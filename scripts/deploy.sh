@@ -18,8 +18,10 @@ whoami
 echo "listing of /home/gradle"
 ls -al /home/gradle
 
+echo "PROJECT_DIR: ${PROJECT_DIR}"
+
 echo "tree of the PROJECT_DIR"
-tree ${PROJECT_DIR}
+tree -pug ${PROJECT_DIR}
 
 
 
