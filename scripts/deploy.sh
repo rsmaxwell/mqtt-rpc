@@ -16,6 +16,11 @@ export GRADLE_USER_HOME=/home/gradle
 # (optional but often helps tools that rely on HOME)
 export HOME=/home/gradle
 
+echo "whoami"
+whoami
+
+echo "listing of /home/gradle"
+ls -al /home/gradle
 
 ${PROJECT_DIR}/gradlew publish \
     -PrepositoryName=${REPOSITORY} \
