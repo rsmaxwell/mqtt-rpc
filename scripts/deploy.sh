@@ -22,12 +22,12 @@ id jenkins
 id ubuntu
 id gradle
 
-sudo find /home -maxdepth 2 -name gradle.properties -type f
+find /home -maxdepth 2 -name gradle.properties -type f
 
-sudo ls -al /home
-sudo ls -al /home/jenkins
-sudo ls -al /home/ubuntu
-sudo ls -al /home/gradle
+ls -al /home
+ls -al /home/jenkins
+ls -al /home/ubuntu
+ls -al /home/gradle
 
 set +x
 
