@@ -24,10 +24,17 @@ id gradle
 
 find /home -maxdepth 2 -name gradle.properties -type f
 
+tree -pug -L 2 /home
+
 ls -al /home
 ls -al /home/jenkins
+ls -al /home/jenkins/.gradle
 ls -al /home/ubuntu
+ls -al /home/ubuntu/.gradle
 ls -al /home/gradle
+ls -al /home/gradle/.gradle
+
+tree -pug -L 2 /home 
 
 set +x
 
