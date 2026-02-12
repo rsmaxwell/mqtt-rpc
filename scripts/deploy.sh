@@ -34,6 +34,15 @@ ls -al /home/ubuntu/.gradle
 ls -al /home/gradle
 ls -al /home/gradle/.gradle
 
+ls -al /home
+ls -al /home/jenkins
+ls -al /home/jenkins/agent
+ls -al /home/jenkins/agent/workspace
+ls -al /home/jenkins/agent/workspace/mqtt-rpc-pipeline_main
+ls -al /home/jenkins/agent/workspace/mqtt-rpc-pipeline_main/project@tmp
+ls -al /home/jenkins/agent/workspace/mqtt-rpc-pipeline_main/project@tmp/durable-65b079de
+ls -al /home/jenkins/agent/workspace/mqtt-rpc-pipeline_main/project@tmp/durable-65b079de/script.sh.copy
+
 ls -al /home/gradle/.gradle/gradle.properties
 cat /home/gradle/.gradle/gradle.properties
 
