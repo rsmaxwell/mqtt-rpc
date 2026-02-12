@@ -1,9 +1,9 @@
 [submodule "mqtt-rpc-common"]
 	path = mqtt-rpc-common
 	url = ../mqtt-rpc-common.git
-[submodule "mqtt-rpc-request"]
+[submodule "mqtt-rpc-requestor"]
 	path = mqtt-rpc-requestor
 	url = ../mqtt-rpc-requestor.git
-[submodule "mqtt-rpc-response"]
+[submodule "mqtt-rpc-responder"]
 	path = mqtt-rpc-responder
 	url = ../mqtt-rpc-responder.git
