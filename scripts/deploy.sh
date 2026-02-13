@@ -10,26 +10,8 @@ BUILD_DIR=${PROJECT_DIR}/build
 
 cd ${PROJECT_DIR}
 
-
-
-
-set -x
-ls -al /home/gradle
-echo "PROJECT_DIR: ${PROJECT_DIR}"
-tree -pug ${PROJECT_DIR}
-whoami
-id jenkins
-id ubuntu
-id gradle
-find /home -maxdepth 4 -name gradle.properties -type f
-tree -pug -L 3 /home/gradle
-cat /home/gradle/.gradle/gradle.properties
-tree -pug -L 3 /home 
-set +x
-
-
 export GRADLE_USER_HOME=/home/gradle/.gradle
 
-${PROJECT_DIR}/gradlew publish \
+${PROJECT_DIR}/gradlew publish --info --stacktrace \
     -PrepositoryName=${REPOSITORY} \
     -PprojectVersion=${VERSION}
