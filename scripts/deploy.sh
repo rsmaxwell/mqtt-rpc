@@ -21,33 +21,10 @@ whoami
 id jenkins
 id ubuntu
 id gradle
-
-find /home -maxdepth 2 -name gradle.properties -type f
-
-tree -pug -L 2 /home
-
-ls -al /home
-ls -al /home/jenkins
-ls -al /home/jenkins/.gradle
-ls -al /home/ubuntu
-ls -al /home/ubuntu/.gradle
-ls -al /home/gradle
-ls -al /home/gradle/.gradle
-
-ls -al /home
-ls -al /home/jenkins
-ls -al /home/jenkins/agent
-ls -al /home/jenkins/agent/workspace
-ls -al /home/jenkins/agent/workspace/mqtt-rpc-pipeline_main
-ls -al /home/jenkins/agent/workspace/mqtt-rpc-pipeline_main/project@tmp
-ls -al /home/jenkins/agent/workspace/mqtt-rpc-pipeline_main/project@tmp/durable-65b079de
-ls -al /home/jenkins/agent/workspace/mqtt-rpc-pipeline_main/project@tmp/durable-65b079de/script.sh.copy
-
-ls -al /home/gradle/.gradle/gradle.properties
+find /home -maxdepth 4 -name gradle.properties -type f
+tree -pug -L 3 /home/gradle
 cat /home/gradle/.gradle/gradle.properties
-
 tree -pug -L 3 /home 
-
 set +x
 
 
