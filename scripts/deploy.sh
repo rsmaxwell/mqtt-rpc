@@ -51,7 +51,7 @@ tree -pug -L 3 /home
 set +x
 
 
-
+export GRADLE_USER_HOME=/home/gradle/.gradle
 
 ${PROJECT_DIR}/gradlew publish \
     -PrepositoryName=${REPOSITORY} \
