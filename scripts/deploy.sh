@@ -10,6 +10,8 @@ BUILD_DIR=${PROJECT_DIR}/build
 
 cd ${PROJECT_DIR}
 
+export GRADLE_USER_HOME=/home/gradle/.gradle
+
 ${PROJECT_DIR}/gradlew publish --info --stacktrace \
     -PrepositoryName=${REPOSITORY} \
     -PprojectVersion=${VERSION}
