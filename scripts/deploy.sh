@@ -14,8 +14,6 @@ cd ${PROJECT_DIR}
 echo "GRADLE_USER_HOME=$GRADLE_USER_HOME"
 ls -al "$GRADLE_USER_HOME" || true
 
-BASE_VERSION="${VERSION%-build-${BUILD_ID}}"
-
 ./gradlew publish --no-daemon --info \
     -PrepositoryName="${REPOSITORY}" \
-    -PprojectVersion="${BASE_VERSION}"
+    -PprojectVersion="${VERSION}"
