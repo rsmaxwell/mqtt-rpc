@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+
 
 BASEDIR=$(dirname "$0")
 SCRIPT_DIR=$(cd $BASEDIR && pwd)
@@ -10,11 +11,11 @@ BUILD_DIR=${PROJECT_DIR}/build
 
 cd ${PROJECT_DIR}
 
-
-
 echo "GRADLE_USER_HOME=$GRADLE_USER_HOME"
 ls -al "$GRADLE_USER_HOME" || true
 
-${PROJECT_DIR}/gradlew publish --info --stacktrace \
-    -PrepositoryName=${REPOSITORY} \
-    -PprojectVersion=${VERSION}
+BASE_VERSION="${VERSION%-build-${BUILD_ID}}"
+
+./gradlew publish --no-daemon --info \
+    -PrepositoryName="${REPOSITORY}" \
+    -PprojectVersion="${BASE_VERSION}"
