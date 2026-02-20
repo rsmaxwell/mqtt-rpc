@@ -83,13 +83,13 @@ SCRIPT_DIR=$(cd "$BASEDIR" && pwd)
 PROJECT_DIR=$(dirname "$SCRIPT_DIR")
 BUILD_DIR="${PROJECT_DIR}/build"
 
-# mkdir -p "${BUILD_DIR}"
-# cd "${BUILD_DIR}"
-#
-# cat > buildinfo <<EOL
-# VERSION="${VERSION}"
-# REPOSITORY="${REPOSITORY}"
-# EOL
+mkdir -p "${BUILD_DIR}"
+cd "${BUILD_DIR}"
+
+cat > buildinfo <<EOL
+VERSION="${VERSION}"
+REPOSITORY="${REPOSITORY}"
+EOL
 
 # tree "${PROJECT_DIR}"
 
