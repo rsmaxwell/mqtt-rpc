@@ -57,7 +57,7 @@ In ./mqtt-rpc-request/scripts/development-scripts
 * getDeps.bat - extracts all the dependent jars into the "runtime" directory 
 * calculator.bat - sends a calculator request (with parameters)
 * getPages.bat - sends a simple request (no parameters)
-* quit.bat - sends a special request which causes the responder to quit.
+* quit.bat - sends a special request which causes the responder to quit
 
     
 
