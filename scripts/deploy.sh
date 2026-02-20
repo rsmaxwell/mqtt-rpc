@@ -11,9 +11,6 @@ BUILD_DIR=${PROJECT_DIR}/build
 
 cd ${PROJECT_DIR}
 
-echo "GRADLE_USER_HOME=$GRADLE_USER_HOME"
-ls -al "$GRADLE_USER_HOME" || true
-
 ./gradlew publish --no-daemon --info \
     -PrepositoryName="${REPOSITORY}" \
     -PprojectVersion="${VERSION}"
