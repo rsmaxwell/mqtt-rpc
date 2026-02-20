@@ -91,6 +91,10 @@ VERSION="${VERSION}"
 REPOSITORY="${REPOSITORY}"
 EOL
 
+echo "buildinfo:"
+cat buildinfo
+
+
 # tree "${PROJECT_DIR}"
 
 # ---- Common metadata shared by all modules (matches the module scripts) ----
