@@ -11,12 +11,6 @@ BUILD_DIR=${PROJECT_DIR}/build
 
 cd ${PROJECT_DIR}
 
-echo "${BUILD_DIR}/buildinfo:"
-cat ${BUILD_DIR}/buildinfo
-
-echo "REPOSITORY: $REPOSITORY"
-echo "VERSION: $VERSION"
-
 ./gradlew publish --no-daemon --info \
-    -PrepositoryName="${REPOSITORY}" \
-    -PprojectVersion="${VERSION}"
+    -Prepo="${REPOSITORY}" \
+    -Pversion="${VERSION}"
