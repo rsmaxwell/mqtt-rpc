@@ -42,10 +42,12 @@ lombok = "org.projectlombok:lombok:1.18.38"
 
 org-eclipse-paho-mqttv5-client = "org.eclipse.paho:org.eclipse.paho.mqttv5.client:1.2.5"
 
-log4j-api = "org.apache.logging.log4j:log4j-api:3.0.0-beta2"
+## log4j-api = "org.apache.logging.log4j:log4j-api:3.0.0-beta2"
 
-log4j-core = "org.apache.logging.log4j:log4j-core:3.0.0-beta2"
+## log4j-core = "org.apache.logging.log4j:log4j-core:3.0.0-beta2"
 ##                                            ⬆ :3.0.0-beta3"
+
+slf4j = "org.slf4j:slf4j-api:2.0.17"
 
 junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
 
