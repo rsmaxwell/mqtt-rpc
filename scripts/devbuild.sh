@@ -1,8 +1,9 @@
 
 
-SCRIPT_DIR=C:\Users\Richard\git\github.com\rsmaxwell\mqtt-rpc\scripts
-PROJECT_DIR=C:\Users\Richard\git\github.com\rsmaxwell\mqtt-rpc
-BUILD_DIR=C:\Users\Richard\git\github.com\rsmaxwell\mqtt-rpc\build
+BASEDIR=$(dirname "$0")
+SCRIPT_DIR=$(cd $BASEDIR && pwd)
+PROJECT_DIR=$(dirname $SCRIPT_DIR)
+BUILD_DIR=${PROJECT_DIR}/build
 
 call ${BUILD_DIR}/buildinfo
 
